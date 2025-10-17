@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 10px;
+    background-color: #222222;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 90vw;
+    margin: auto;
+    padding: auto 5px;
+    border: 4px solid aquamarine;
+    border-radius: 7px;
+}
+
+.firstchild {
+    position: relative;
+    height: 3rem;
+    background-color: rgb(252, 132, 52);
+    /* border: 3px solid rgb(252, 132, 52); */
+    border-radius: 6px;
+    padding: auto 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter {
+   
+    text-align: center;
+    background-color: rgb(208, 201, 56);
+    color: white;
+    font-weight: 500;
+    font-size: large;
+
+    width: 20%;
+    line-height: 2.8rem;
+    height: 3rem;
+    border-radius: 6px;
+}
+.restart {
+    text-align: center;
+    background-color: rgb(158, 188, 211);
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    min-width: 80px;
+    line-height: 1.8rem;
+    
+    height: 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.timer {
+    text-align: center;
+    background-color: rgb(208, 201, 56);
+    color: white;
+    font-weight: 500;
+    font-size: large;
+
+    width: 20%;
+    line-height: 2.8rem;
+    height: 3rem;
+    border-radius: 6px;
+}
+
+.child {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.playground {
+    cursor: url(crosshair.svg), auto;
+    flex: 1;
+    background-color: rgb(184, 223, 255);
+
+    /* background-color: rgb(196, 207, 216); */
+}
+
+.aim {
+    position: absolute;
+    display: block;
+    height: 100px;
+    width: 100px;
+
+    background-color: rgb(142, 142, 177);
+    border-radius: 50%;
+    
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    /* transition: 0.3s ease; */
+    /* optional: smooth teleport */
+}
+
+/* Overlay styles */
+.startMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.589);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.menu {
+  background: white;
+  padding: 30px 55px;
+  
+  border: 8px solid  rgb(208, 201, 56);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* media query for men size responsiveness */
+@media (max-width: 600px) {
+ .menu{
+    padding: 5px 15px;
+ }
+ #start-btn, #restart-btn {
+   
+  margin-top: 13px;
+  padding: 4px 12px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+}
+ 
+ 
+/* //media query ends */
+button{
+     border: none;
+    border-radius: 10px;
+    background-color:  rgb(208, 201, 56);
+    color: white;
+    padding: 3px;
+}
+#start-btn, #restart-btn {
+   
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+#restart-btn {
+  display: none; /* show only on game over */
+}
+.menuTitle{
+   font-size: clamp(20px, 5vw, 38.4px);
+    font-weight: 700;
+    color: rgb(32, 19, 65);
+    
+}
