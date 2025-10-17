@@ -78,7 +78,7 @@ body{
 }
 
 .playground {
-    cursor: url(/images/crosshair.svg), auto;
+    cursor: url(./images/crosshair.svg), auto;
     flex: 1;
     background-color: rgb(184, 223, 255);
 
