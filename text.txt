@@ -1,1 +1,2 @@
-this is some text
+this is some text -by commiter
+and i just added some extra lines as i am owner of this 
